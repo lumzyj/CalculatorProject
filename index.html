@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="calculator-container">
+  <table>
+    <tr>
+      <td colspan="4"><input type="text" id="output" value="0" readonly></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendToOutput('7')">7</button></td>
+      <td><button onclick="appendToOutput('8')">8</button></td>
+      <td><button onclick="appendToOutput('9')">9</button></td>
+      <td><button onclick="appendToOutput('/')">&#247;</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendToOutput('4')">4</button></td>
+      <td><button onclick="appendToOutput('5')">5</button></td>
+      <td><button onclick="appendToOutput('6')">6</button></td>
+      <td><button onclick="appendToOutput('*')">x</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendToOutput('1')">1</button></td>
+      <td><button onclick="appendToOutput('2')">2</button></td>
+      <td><button onclick="appendToOutput('3')">3</button></td>
+      <td><button onclick="appendToOutput('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendToOutput('0')">0</button></td>
+<!--      <td><button onclick="clearOutput()">C</button></td>-->
+      <td><button onclick="appendToOutput('.')">.</button></td>
+      <td><button onclick="appendToOutput('+')">+</button></td>
+      <td><button class="equals-button" onclick="calculate()">=</button></td>
+
+    </tr>
+  </table>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -89,15 +89,33 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0;
-
 }
+
+.git-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.git-link a {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #F99734;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.gitlink a:hover {
+  background-color: #FFC653;
+}
+
 
 .calculator-container {
   border-radius: 15px;
   padding: 20px;
   background-color: #606168;
-  text-align: right;
+
   box-shadow: 0px 4px 6px rgba(18, 18, 19, 0.8);
 }
 
